@@ -1,4 +1,5 @@
 ## VectorFG([x1,x2],[y1,y2],divisions,MAXSPEED)
+##MAXSPEED = 0 for no color, only black arrows
 function VectorFG(xRange,yRange,divisions,MAXSPEED)
   xSpace = (xRange(2)-xRange(1))/divisions;
   ySpace = (yRange(2)-yRange(1))/divisions;
