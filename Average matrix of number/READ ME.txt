@@ -1,0 +1,13 @@
+So... I averaged a matrix of numbers of Matt Parker.
+With that average and the original picture I could then use the blur to make a edge detect
+
+Original - Blur, will give you highlighted region of change
+
+(this was used from how substance deisgner handles edge detection)
+Areas of that have lots of change will become blurred. They will have significantly different values.
+Areas of little change will stay roughly the same.
+
+So when you take the orignal and minus off the blur map you are left with areas of high change.
+
+What about areas that become brighter in the blur map, when you subtract off you'll be left with negative numbers? 
+For situations like that you can just string it through an absolute function.
